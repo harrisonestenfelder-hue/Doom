@@ -1,29 +1,25 @@
-# God Emperor Doom: Rise of the God Emperor
 
-A story-driven Minecraft Java mod built for **Minecraft 1.21.11**, **NeoForge 21.11.48**, and **Java 21**.
+Installation information
+=======
 
-## Current foundation
+This template repository can be directly cloned to get you started with a new
+mod. Simply create a new repository cloned from this one, by following the
+instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
-- Mod identity: `godemperor_doom`
-- Main Java package: `com.doom.godemperor`
-- A dedicated **God Emperor Doom** creative tab
-- The first registered in-game item: **Doom's Sigil**
-- GitHub Actions workflows retained for automated builds
+Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
 
-This is the starting foundation, not the completed campaign. Armor, abilities, quests, bosses, cinematics, and world integration will be added in later tested milestones.
+If at any point you are missing libraries in your IDE, or you've run into problems you can
+run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
+{this does not affect your code} and then start the process again.
 
-## Build
+Mapping Names:
+============
+By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
+in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
+license. For the latest license text, refer to the mapping file itself, or the reference copy here:
+https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
 
-Use Java 21 and run:
-
-```bash
-./gradlew build
-```
-
-On Windows:
-
-```bat
-gradlew.bat build
-```
-
-The mod JAR is produced in `build/libs/`.
+Additional Resources: 
+==========
+Community Documentation: https://docs.neoforged.net/  
+NeoForged Discord: https://discord.neoforged.net/
